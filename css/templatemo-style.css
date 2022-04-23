@@ -169,12 +169,23 @@ h1,h2,h3,h4,h5
 /* end simpletextrotator */
 
 /* start home */       
+#home::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background:url('../images/home/laptop-and-coffee-b&w.jpg') ;
+    opacity: .35;
+}
+
 #home
 	{
-        background: url('../images/home-bg-code.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right;
         padding-top: 120px;
         padding-bottom: 140px;
         text-align: center;
